@@ -1,14 +1,14 @@
 package br.com.alura.carrinho;
 
 public class ContaBancaria {
-    double limiteDeCredito;
+    private double limiteDeCredito;
 
-    boolean avaliarCompra(double valor){
+    boolean avaliarCompra(double valor) {
         return valor < limiteDeCredito;
     }
 
-    void debitarValorDeCompra(double valor){
-        if (valor < limiteDeCredito){
+    void debitarValorDeCompra(double valor) {
+        if (valor < limiteDeCredito) {
             limiteDeCredito -= valor;
         }
     }
